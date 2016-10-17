@@ -22,9 +22,9 @@ import javax.mail.internet.MimeMessage;
  
 public class Email {
     
-    private static String fromEmail = "645942a839ee1259163e87a9a647b138"; //requires valid gmail id
+    private static String fromEmail = ""; //requires valid gmail id
     private static String fromEmailView = "new_cars"; //requires valid gmail id
-    private static String password = "373aec7833c87fc82a496e226cc13008"; // correct password for gmail id
+    private static String password = ""; // correct password for gmail id
     private static String toEmail = "mail@mail.ua"; // can be any email id 
  
     /**
@@ -44,7 +44,7 @@ public class Email {
           msg.addHeader("format", "flowed");
           msg.addHeader("Content-Transfer-Encoding", "8bit");
  
-          msg.setFrom(new InternetAddress("jstovbun@gmail.com", fromEmailView));
+          msg.setFrom(new InternetAddress("mail@gmail.com", fromEmailView));
  
           msg.setReplyTo(InternetAddress.parse(fromEmail, false));
  
